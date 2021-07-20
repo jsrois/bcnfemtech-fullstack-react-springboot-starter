@@ -1,54 +1,9 @@
-#app {
-  height: 100vh;
-  padding: 20%;
-}
-
-.experiencesList {
-  border: thin solid #444444;
-  width: 300px;
+.greeting {
+  font-size: xxx-large;
+  color: #de1e40;
+  background-color: aquamarine;
+  border: thin dashed chartreuse;
+  width: 50%;
   margin: auto;
-  border-radius: 12px;
-  background-color: whitesmoke;
-
-  &__title {
-    text-align: center;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  &__item {
-    box-shadow: #444444 1px 1px;
-    border: thin solid black;
-  }
-}
-
-.experience {
-
-  height: 120px;
-  position: relative;
   text-align: center;
-
-  &__name {
-    padding: 20%;
-  }
-
-  &__details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-
-  }
-  &:hover &__details {
-    width: 100%;
-  }
 }

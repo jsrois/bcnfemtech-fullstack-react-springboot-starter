@@ -5,9 +5,8 @@ import '../scss/main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import {ExperiencePanel} from './components/ExperiencePanel'
 
 ReactDOM.render(
-    React.createElement(ExperiencePanel),
+    <div className="greeting">⚛️ Hello from React! ⚛️</div>,
     document.getElementById("app")
 )
