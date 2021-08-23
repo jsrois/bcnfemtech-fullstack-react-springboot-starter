@@ -28,6 +28,10 @@ test {
     useJUnitPlatform()
 }
 
+jar {
+    enabled = false
+}
+
 task installFrontendDependencies(type: NpmTask) {
     workingDir = file('./web-client')
     args = ['install']

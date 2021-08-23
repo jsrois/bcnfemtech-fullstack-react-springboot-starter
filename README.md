@@ -51,3 +51,11 @@ de H2 disponible en `/h2-ui`. Para hacer login deberemos usar la misma configura
 ![panel de h2](doc/images/h2-ui.png)
 
 
+## Deploy a Heroku con Postgres
+
+Se incluye un archivo de configuración para un profile de configuración `heroku`. Para activarlo una vez que 
+la aplicación en Heroku ha sido creada, es necesario añadir la siguiente variable de configuración: 
+
+```bash
+heroku config:set SPRING_PROFILES_ACTIVE=heroku
+```
