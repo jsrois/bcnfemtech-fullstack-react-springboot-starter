@@ -51,10 +51,7 @@ task copyFiles(type: Copy) {
     into("./src/main/resources/static")
 }
 
-
-task buildFrontend(dependsOn: [
-        'compileWebClient',
-        'copyFiles'
-])
-
-build.dependsOn buildFrontend
+compileWebClient.dependsOn installFrontendDependencies
+copyFiles.dependsOn compileWebClient
+processResources.dependsOn copyFiles
+build.dependsOn copyFiles
